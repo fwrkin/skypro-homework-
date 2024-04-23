@@ -15,5 +15,5 @@ def sorted_by_data(data: list[dict], reversed: bool = True) -> list[dict]:
     принимает на вход список словарей и возвращает новый список,
     в котором исходные словари отсортированы по убыванию даты
     """
-    new_data = sorted(data, key=lambda x: x["data"], reverse=reversed)
+    new_data = sorted(data, key=lambda x: x["date"], reverse=reversed)
     return new_data
